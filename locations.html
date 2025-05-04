@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expedition 33 Locations Tracker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Clair Obscur Expedition 33 Tracker</h1>
+            <h2>Locations Tracker</h2>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="achievements.html">Achievements</a></li>
+                    <li><a href="bosses.html">Bosses</a></li>
+                    <li><a href="music.html">Music Records</a></li>
+                    <li><a href="locations.html" class="active">Locations</a></li>
+                    <li><a href="pictos.html">Pictos</a></li>
+                    <li><a href="journals.html">Journals</a></li>
+                </ul>
+            </nav>
+        </header>
+        
+        <div class="progress-container">
+            <div class="progress-text">Locations <span id="completed-count">0</span>/<span id="total-count">0</span></div>
+            <div class="progress-bar">
+                <div class="progress" id="progress-bar"></div>
+            </div>
+            <div class="toggle-container">
+                <label class="toggle">
+                    <input type="checkbox" id="hide-completed">
+                    <span class="slider"></span>
+                </label>
+                <span>Hide Completed</span>
+            </div>
+        </div>
+        
+        <div class="search-container">
+            <div class="search-input-wrapper">
+                <input type="text" id="search-input" placeholder="Start typing to filter results...">
+                <button id="clear-search" class="clear-button">×</button>
+            </div>
+        </div>
+        
+        <div class="bosses-container">
+            <div class="boss-category">
+                <div class="category-header">
+                    <h3>Primary Locations</h3>
+                </div>
+                <div class="boss-list" id="primary-locations">
+                    <!-- Primary locations will be populated here -->
+                </div>
+            </div>
+            
+            <div class="boss-category">
+                <div class="category-header">
+                    <h3>Sub-locations</h3>
+                </div>
+                <div class="boss-list" id="sub-locations">
+                    <!-- Sub-locations will be populated here -->
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <footer>
+        <div class="footer-content">
+            <p>Data sourced from <a href="https://expedition33.wiki.fextralife.com/" target="_blank">Fextralife Expedition 33 Wiki</a></p>
+        </div>
+    </footer>
+    
+    <script src="locations.js"></script>
+</body>
+</html>
